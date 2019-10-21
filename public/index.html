@@ -14,30 +14,42 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
+    <title>Using React with Redux</title>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.css" integrity="sha256-3XX+GSBjRg/O/Y67vnNYn/6r2DK6nT8yWuwORoZ1cdA=" crossorigin="anonymous" />
+  <style>
+ 
+ .footer-bottom{
+  width: 100%;
+  height: 10%;
+	padding: 25px 0;
+	text-align: center;
+	color: #fff;
+	background: rgb(0, 0, 0);
+}
+  </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="jumbotron">
+        <h2 class="display-5">Meet the Hunters!</h2>
+        <p class="lead">Simple app using React.js along with Redux.js 7.1, having 
+        full interaction with all of the components state by changing it based on 
+        what the user does on the interface. We used two reducers, combined into one,
+        along with four action types and an instance of the dispatch to launch them
+        when the user clicks on any of these buttons. Redux is cool, folks!</p>
+        <hr class="my-4">
+        <div id="root"></div>
+      </div>
+    
+        <div class="row">
+           <div class="col-md-12">
+                <div class="footer-bottom">
+                  Copyright © 2019, All Rights Reserved - Coded with love by Alvison Hunter Arnuero.
+                </div>
+          </div>
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
