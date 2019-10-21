@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/meetthehunters/static/css/main.11e57f21.chunk.css",
+    "main.js": "/meetthehunters/static/js/main.28b3ab81.chunk.js",
+    "main.js.map": "/meetthehunters/static/js/main.28b3ab81.chunk.js.map",
+    "runtime-main.js": "/meetthehunters/static/js/runtime-main.6914bea3.js",
+    "runtime-main.js.map": "/meetthehunters/static/js/runtime-main.6914bea3.js.map",
+    "static/js/2.6e5a3df6.chunk.js": "/meetthehunters/static/js/2.6e5a3df6.chunk.js",
+    "static/js/2.6e5a3df6.chunk.js.map": "/meetthehunters/static/js/2.6e5a3df6.chunk.js.map",
+    "index.html": "/meetthehunters/index.html",
+    "precache-manifest.c3e90b040c46051651a84854833aa1d4.js": "/meetthehunters/precache-manifest.c3e90b040c46051651a84854833aa1d4.js",
+    "service-worker.js": "/meetthehunters/service-worker.js",
+    "static/css/main.11e57f21.chunk.css.map": "/meetthehunters/static/css/main.11e57f21.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6914bea3.js",
+    "static/js/2.6e5a3df6.chunk.js",
+    "static/css/main.11e57f21.chunk.css",
+    "static/js/main.28b3ab81.chunk.js"
+  ]
+}
