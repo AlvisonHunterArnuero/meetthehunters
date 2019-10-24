@@ -1,40 +1,42 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Gallery() {
-
+  const person = useSelector(state => state.Members);
   return (
-      <>
- <hr />
-
-<div class="card">
-  <div class="card-header">
-  <h5 className="card-title">Some of my pictures</h5>
-  </div>
-  <div className="card-body">
-    <div className="container">
-    <div className="box">
-      <img src="https://source.unsplash.com/1000x800" />
-    <span>Photo 1</span>
-  </div>
-  <div className="box">
-    <img src="https://source.unsplash.com/1000x802" />
-    <span>Photo 2</span>
-  </div>
-  <div className="box">
-    <img src="https://source.unsplash.com/1000x804" />
-    <span>Photo 3</span>
-  </div>
-  <div className="box">
-    <img src="https://source.unsplash.com/1000x806" />
-    <span>Photo 4</span>
-  </div>
-</div>
-
-  </div>
-</div>
-    
-</>
-);
+    <>
+          <div className="container">
+            <div className="box">
+              <img
+                src={person.photo1 ? person.photo1 : "./pics/liam01.jpg"}
+                className="fade-in chosen"
+                alt={person.name}
+              />
+            </div>
+            <div className="box">
+              <img
+                src={person.photo2 ? person.photo2 : "./pics/liam02.jpg"}
+                className="fade-in chosen"
+                alt={person.name}
+              />
+            </div>
+            <div className="box">
+              <img
+                src={person.photo3 ? person.photo3 : "./pics/liam03.jpg"}
+                className="fade-in chosen"
+                alt={person.name}
+              />
+            </div>
+            <div className="box">
+              <img
+                src={person.photo4 ? person.photo4 : "./pics/liam04.jpg"}
+                className="fade-in chosen"
+                alt={person.name}
+              />
+            </div>
+          </div>
+    </>
+  );
 }
 
 export default Gallery;

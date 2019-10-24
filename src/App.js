@@ -1,60 +1,51 @@
 import React from "react";
 import NavButtons from "./NavButtons";
-import { useSelector} from "react-redux";
+import { useSelector } from "react-redux";
+import Gallery from "./Gallery";
 
 function App() {
   const person = useSelector(state => state.Members);
-
   return (
     <div className="App">
       <div className="container-fluid">
         <NavButtons />
-
         <div className="row mytopmargin">
-          <div className="col-lg-3 col-sm-12 col-xs-12">
-            <div className="circular--portrait">
-              <img
-                src={person.photo ? person.photo : "liam.jpg"}
-                className="rounded-circle fade-in chosen"
-                alt={person.name}
-              />
-            </div>
-          </div>
-
-          <div className="col-lg-1 col-sm-12 col-xs-12"></div>
-
-          <div className="col-lg-8 col-sm-12 col-xs-12">
+          <div className="col-xs-12 col-sm-12 col-lg-12 col-xl-4 btnMargins">
             <ul className="list-group">
-              <li className="list-group-item active">
+              <li className="list-group-item bg-danger">
                 {" "}
-                <b className="text-uppercase">
+                <b className="display-4 text-uppercase text-white">
                   {" "}
                   {person.name ? person.name : "Liam Hunter"}{" "}
                 </b>
               </li>
               <li className="list-group-item">
-                <b className="text-uppercase">quote: </b>
+                <h4 className="text-uppercase">quote: </h4>
                 {person.quote
                   ? person.quote
                   : "dada mamma tetan, chichi ah hoia, ti ta"}
               </li>
               <li className="list-group-item">
-                <b className="text-uppercase">hobbies: </b>
+                <h4 className="text-uppercase">hobbies: </h4>
                 {person.hobbies
                   ? person.hobbies
                   : "Sleep, Eat, Sleep, Eat, Poop"}
               </li>
               <li className="list-group-item">
-                <b className="text-uppercase"> food: </b>
+                <h4 className="text-uppercase"> food: </h4>
                 {person.food
                   ? person.food
                   : "Chicken, Fish, Fried Plantains, Potatoes, Espaguetti"}
               </li>
               <li className="list-group-item">
-                <b className="text-uppercase">languages: </b>
+                <h4 className="text-uppercase">languages: </h4>
                 {person.languages ? person.languages : "Spanish, English"}
               </li>
             </ul>
+          </div>
+
+          <div className="col-xs-12 col-sm-12 col-lg-12 col-xl-8">
+            <Gallery />
           </div>
         </div>
       </div>

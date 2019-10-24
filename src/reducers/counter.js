@@ -1,4 +1,4 @@
-const counterReducer = (state = "liam.jpg", action)=>{
+const counterReducer = (state = "./pics/liam01.jpg", action)=>{
     switch (action.type){
         case "DISPLAY_LIAM":
             return state = action.payload;

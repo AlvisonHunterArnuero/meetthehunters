@@ -12,59 +12,34 @@ code {
     monospace;
 }
 
-.mytopmargin{
-  margin-top: 15px;
-}
-
-.circular--portrait {
-position: relative;
-width: 260px;
-height: 260px;
-overflow: hidden;
-border-radius: 50%;
-margin-bottom: 10px;
-align-content: center;
-}
-
-.circular--portrait img {
-width: 100%;
-height: auto;
-opacity: 1;
-}
-
+/* the buttons spaces are declared and establisehd here */
+.mytopmargin{margin-top: 15px;}
 .btnMargins{margin-bottom: 10px;}
 
-
+/* photo gallery part starts bere*/
 .container {
   display: flex;
   width: 100%;
-  padding: 4% 2%;
+  padding: 0% 1%;
   box-sizing: border-box;
-  height: 100vh;
+  height: 60vh;
+  margin-bottom: 20px;
 }
 
 .box {
   flex: 1;
   overflow: hidden;
   transition: .5s;
-  margin: 0 2%;
+  margin: 0 1%;
   box-shadow: 0 20px 30px rgba(0,0,0,.1);
   line-height: 0;
 }
 
 .box > img {
-  width: 200%;
-  height: calc(100% - 10vh);
+  width: 100%;
+  height: calc(120% - 10vh);
   object-fit: cover; 
   transition: .5s;
-}
-
-.box > span {
-  font-size: 3.8vh;
-  display: block;
-  text-align: center;
-  height: 10vh;
-  line-height: 2.6;
 }
 
 .box:hover { flex: 1 1 50%; }
@@ -73,26 +48,3 @@ opacity: 1;
   height: 100%;
 }
  
-
-
-.fade-in {
-	-webkit-animation: fade-in 2.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 2.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
- @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}

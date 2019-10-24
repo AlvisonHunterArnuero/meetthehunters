@@ -14,42 +14,47 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <title>Using React with Redux</title>
+    <title>Meet the Hunters - Using React with Redux</title>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.css" integrity="sha256-3XX+GSBjRg/O/Y67vnNYn/6r2DK6nT8yWuwORoZ1cdA=" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-mtS696VnV9qeIoC8w/PrPoRzJ5gwydRVn0oQ9b+RJOPxE1Z1jXuuJcyeNxvNZhdx" crossorigin="anonymous">
   <style>
  
- .footer-bottom{
+ html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 10%;
-	padding: 25px 0;
-	text-align: center;
-	color: #fff;
-	background: rgb(0, 0, 0);
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #000000;
+  color: #fff;
+  padding:15px;
 }
   </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="jumbotron">
-        <h2 class="display-5">Meet the Hunters!</h2>
+        <h2 class="display-3">Meet the Hunters!</h2>
         <p class="lead">Simple app using React.js along with Redux.js 7.1, having 
         full interaction with all of the components state by changing it based on 
         what the user does on the interface. We used two reducers, combined into one,
         along with four action types and an instance of the dispatch to launch them
         when the user clicks on any of these buttons. Redux is cool, folks!</p>
-        <hr class="my-4">
-        <div id="root"></div>
+        
       </div>
     
-        <div class="row">
-           <div class="col-md-12">
-                <div class="footer-bottom">
-                  Copyright © 2019, All Rights Reserved - Coded with love by Alvison Hunter Arnuero.
-                </div>
-          </div>
-        </div>
-
+      <div id="root"></div>
+      <footer class="footer bg-sucess">
+        <div class="d-flex justify-content-end text-success"><p>Copyright © 2019, All Rights Reserved - Coded by Alvison Hunter.</p></div>
+      </footer>
   </body>
 </html>
