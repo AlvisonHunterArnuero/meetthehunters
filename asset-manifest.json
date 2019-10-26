@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/meetthehunters/static/css/main.2e3ec8da.chunk.css",
-    "main.js": "/meetthehunters/static/js/main.dbec32fd.chunk.js",
-    "main.js.map": "/meetthehunters/static/js/main.dbec32fd.chunk.js.map",
+    "main.css": "/meetthehunters/static/css/main.d7e350c4.chunk.css",
+    "main.js": "/meetthehunters/static/js/main.cdf8eee3.chunk.js",
+    "main.js.map": "/meetthehunters/static/js/main.cdf8eee3.chunk.js.map",
     "runtime-main.js": "/meetthehunters/static/js/runtime-main.6914bea3.js",
     "runtime-main.js.map": "/meetthehunters/static/js/runtime-main.6914bea3.js.map",
     "static/js/2.c40437aa.chunk.js": "/meetthehunters/static/js/2.c40437aa.chunk.js",
     "static/js/2.c40437aa.chunk.js.map": "/meetthehunters/static/js/2.c40437aa.chunk.js.map",
     "index.html": "/meetthehunters/index.html",
-    "precache-manifest.27b32092170f5b565c57fb7738e57afd.js": "/meetthehunters/precache-manifest.27b32092170f5b565c57fb7738e57afd.js",
+    "precache-manifest.fef2024ce94b0927954059721a61c417.js": "/meetthehunters/precache-manifest.fef2024ce94b0927954059721a61c417.js",
     "service-worker.js": "/meetthehunters/service-worker.js",
-    "static/css/main.2e3ec8da.chunk.css.map": "/meetthehunters/static/css/main.2e3ec8da.chunk.css.map"
+    "static/css/main.d7e350c4.chunk.css.map": "/meetthehunters/static/css/main.d7e350c4.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.6914bea3.js",
     "static/js/2.c40437aa.chunk.js",
-    "static/css/main.2e3ec8da.chunk.css",
-    "static/js/main.dbec32fd.chunk.js"
+    "static/css/main.d7e350c4.chunk.css",
+    "static/js/main.cdf8eee3.chunk.js"
   ]
 }
