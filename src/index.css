@@ -17,6 +17,13 @@ code {
 .mytopmargin{margin-top: 15px;}
 .btnMargins{margin-bottom: 10px;}
 
+.card{
+  min-height: 140px !important;
+  -webkit-border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  border-radius: 15px !important;
+}
+
 /* photo gallery part starts bere*/
 .container {
   display: flex;
