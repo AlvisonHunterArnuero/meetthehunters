@@ -9,44 +9,63 @@ function App() {
     <div className="App">
       <div className="container-fluid">
         <NavButtons />
-        <div className="row mytopmargin">
-          <div className="col-xs-12 col-sm-12 col-lg-12 col-xl-4 btnMargins">
-            <ul className="list-group">
-              <li className="list-group-item bg-danger">
-                {" "}
-                <b className="display-4 text-uppercase text-white">
+<div className="row"><p className="text-info ml-4 text-uppercase display-4">MEET {person.name ? person.name : "Liam Hunter"}</p></div>
+        <div className="row">
+          <div className="col-lg-3 col-xl-3">
+            <div className="card text-white bg-secondary mb-3">
+              <div className="card-header">FAMOUS QUOTE</div>
+              <div className="card-body">
+                <h4 class="card-title">
                   {" "}
-                  {person.name ? person.name : "Liam Hunter"}{" "}
-                </b>
-              </li>
-              <li className="list-group-item">
-                <h4 className="text-uppercase">quote: </h4>
-                {person.quote
-                  ? person.quote
-                  : "dada mamma tetan, chichi ah hoia, ti ta"}
-              </li>
-              <li className="list-group-item">
-                <h4 className="text-uppercase">hobbies: </h4>
-                {person.hobbies
-                  ? person.hobbies
-                  : "Sleep, Eat, Sleep, Eat, Poop"}
-              </li>
-              <li className="list-group-item">
-                <h4 className="text-uppercase"> food: </h4>
-                {person.food
-                  ? person.food
-                  : "Chicken, Fish, Fried Plantains, Potatoes, Espaguetti"}
-              </li>
-              <li className="list-group-item">
-                <h4 className="text-uppercase">languages: </h4>
-                {person.languages ? person.languages : "Spanish, English"}
-              </li>
-            </ul>
+                  {" "}
+                </h4>
+                <p className="card-text">
+                  {person.quote
+                    ? person.quote
+                    : "dada mamma tetan, chichi ah hoia, ti ta"}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-xl-3">
+            <div className="card text-white bg-secondary mb-3">
+              <div className="card-header">HOBBIES</div>
+              <div className="card-body">
+                <p className="card-text">
+                  {person.hobbies
+                    ? person.hobbies
+                    : "Sleep, Eat, Sleep, Eat, Poop"}
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="col-xs-12 col-sm-12 col-lg-12 col-xl-8">
-            <Gallery />
+          <div className="col-lg-3 col-xl-3">
+            <div className="card text-white bg-secondary mb-3">
+              <div className="card-header">FAVORITE FOOD</div>
+              <div className="card-body">
+                <p className="card-text">
+                  {person.food
+                    ? person.food
+                    : "Chicken, Fish, Fried Plantains, Potatoes, Espaguetti"}
+                </p>
+              </div>
+            </div>
           </div>
+          <div className="col-lg-3 col-xl-3">
+            <div className="card text-white bg-secondary mb-3">
+              <div className="card-header">SPOKEN LANGUAGES</div>
+              <div className="card-body">
+                <p className="card-text">
+                  {person.languages ? person.languages : "Spanish, English"}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+          <Gallery />
         </div>
       </div>
     </div>

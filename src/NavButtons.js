@@ -12,35 +12,35 @@ function NavButtons() {
     const myDispatcher = useDispatch();
   return (
    
-        <div className="row mytopmargin">
-            <div className="col-lg-3 col-sm-12">
+        <div className="d-flex flex-row justify-content-end">
+            <div className="m-2">
               <button
                 onClick={() => myDispatcher(displayLiamData("liam.jpg"))}
-                className="btn btn-outline-primary btn-block btnMargins"
+                className="btn btn-outline-primary btn-lg"
               >
                 The Baby
               </button>
             </div>
-            <div className="col-lg-3 mb-2 col-sm-12">
+            <div className="m-2">
             <button
               onClick={() => myDispatcher(displayOniceData("onice.jpg"))}
-              className="btn btn-outline-success btn-block btnMargins"
+              className="btn btn-outline-success btn-lg"
             >
               The Mother
             </button>
             </div>
-            <div className="col-lg-3 mb-2 col-sm-12">
+            <div className="m-2">
             <button
               onClick={() => myDispatcher(displayDeclanData("declan.jpg"))}
-              className="btn btn-outline-warning btn-block btnMargins"
+              className="btn btn-outline-warning btn-lg"
             >
               The Elder
             </button>
             </div>
-            <div className="col-lg-3 mb-2 col-sm-12">
+            <div className="m-2">
             <button
               onClick={() => myDispatcher(displayAlvisonData("alvison.jpg"))}
-              className="btn btn-outline-info btn-block"
+              className="btn btn-outline-info btn-lg"
             >
               The Father
             </button>

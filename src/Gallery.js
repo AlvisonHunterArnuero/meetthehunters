@@ -5,7 +5,8 @@ function Gallery() {
   const person = useSelector(state => state.Members);
   return (
     <>
-          <div className="container">
+    <hr className="border-top" />
+          <div className="container">        
             <div className="box">
               <img
                 src={person.photo1 ? person.photo1 : "./pics/liam01.jpg"}
@@ -35,6 +36,7 @@ function Gallery() {
               />
             </div>
           </div>
+  <hr className="border-top" />      
     </>
   );
 }
