@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   margin-bottom: 100px !important;
@@ -14,10 +19,14 @@ code {
 }
 
 /* the buttons spaces are declared and establisehd here */
-.mytopmargin{margin-top: 15px;}
-.btnMargins{margin-bottom: 10px;}
+.mytopmargin {
+  margin-top: 15px;
+}
+.btnMargins {
+  margin-bottom: 10px;
+}
 
-.card{
+.card {
   min-height: 140px !important;
   -webkit-border-radius: 15px !important;
   -moz-border-radius: 15px !important;
@@ -38,22 +47,36 @@ code {
 .box {
   flex: 1;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
   margin: 0 1%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   line-height: 0;
 }
 
 .box > img {
   width: 200%;
   height: calc(150% - 10vh);
-  object-fit: cover; 
-  transition: .5s;
+  object-fit: cover;
+  transition: 0.5s;
 }
 
-.box:hover { flex: 0 1 26%; }
+.box:hover {
+  flex: 0 1 26%;
+}
 .box:hover > img {
   width: 100%;
   height: 100%;
 }
- 
+
+img {
+  filter: grayscale(1);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+  line-height: 100px;
+}

@@ -1,9 +1,9 @@
-import counterReducers from './counter';
+import counterReducers from './familyMembers';
 import loggedReducers from './islogged';
 import {combineReducers} from 'redux';
 
 const rootReducers = combineReducers({
-    Members: counterReducers,
+    familyMembersReducer: counterReducers,
     myStatus: loggedReducers
 });
 export default rootReducers;

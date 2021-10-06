@@ -1,73 +1,72 @@
 import React from "react";
-import NavButtons from "./NavButtons";
+import NavButtons from "./components/NavButtons";
 import { useSelector } from "react-redux";
-import Gallery from "./Gallery";
+import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 function App() {
-  const person = useSelector(state => state.Members);
+  const person = useSelector((state) => state.familyMembersReducer);
+  const { name, quote, hobbies, food, languages } = person;
   return (
-    <div className="App">
-      <div className="container-fluid">
+    <div className='App'>
+      <div className='container-fluid'>
         <NavButtons />
-<div className="row"><p className="text-info ml-4 text-uppercase display-4">MEET {person.name ? person.name : "Liam Hunter"}</p></div>
-        <div className="row">
-          <div className="col-lg-3 col-xl-3">
-            <div className="card text-white bg-secondary mb-3">
-              <div className="card-header">FAMOUS QUOTE</div>
-              <div className="card-body">
-                <h4 class="card-title">
-                  {" "}
-                  {" "}
-                </h4>
-                <p className="card-text">
-                  {person.quote
-                    ? person.quote
-                    : "dada mamma tetan, chichi ah hoia, ti ta"}
+        <div className='row'>
+          <p className='text-info ml-4 text-uppercase display-4'>
+            MEET {name ? name : "Liam Hunter"}
+          </p>
+        </div>
+        <div className='row'>
+          <div className='col-lg-3 col-xl-3'>
+            <div className='card text-white bg-secondary mb-3'>
+              <div className='card-header'>FAMOUS QUOTE</div>
+              <div className='card-body'>
+                <p className='card-text'>
+                  {quote ? quote : "Are you kidding me?"}
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-xl-3">
-            <div className="card text-white bg-secondary mb-3">
-              <div className="card-header">HOBBIES</div>
-              <div className="card-body">
-                <p className="card-text">
-                  {person.hobbies
-                    ? person.hobbies
-                    : "Sleep, Eat, Sleep, Eat, Poop"}
+          <div className='col-lg-3 col-xl-3'>
+            <div className='card text-white bg-secondary mb-3'>
+              <div className='card-header'>HOBBIES</div>
+              <div className='card-body'>
+                <p className='card-text'>
+                  {hobbies ? hobbies : "Play with Dinosaurs, singing and dancing, watching TV"}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="col-lg-3 col-xl-3">
-            <div className="card text-white bg-secondary mb-3">
-              <div className="card-header">FAVORITE FOOD</div>
-              <div className="card-body">
-                <p className="card-text">
-                  {person.food
-                    ? person.food
+          <div className='col-lg-3 col-xl-3'>
+            <div className='card text-white bg-secondary mb-3'>
+              <div className='card-header'>FAVORITE FOOD</div>
+              <div className='card-body'>
+                <p className='card-text'>
+                  {food
+                    ? food
                     : "Chicken, Fish, Fried Plantains, Potatoes, Espaguetti"}
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-xl-3">
-            <div className="card text-white bg-secondary mb-3">
-              <div className="card-header">SPOKEN LANGUAGES</div>
-              <div className="card-body">
-                <p className="card-text">
-                  {person.languages ? person.languages : "Spanish, English"}
+          <div className='col-lg-3 col-xl-3'>
+            <div className='card text-white bg-secondary mb-3'>
+              <div className='card-header'>SPOKEN LANGUAGES</div>
+              <div className='card-body'>
+                <p className='card-text'>
+                  {languages ? languages : "Spanish, English"}
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+        <div className='col-xs-12 col-sm-12 col-lg-12 col-xl-12'>
           <Gallery />
         </div>
       </div>
+    <Footer />
     </div>
   );
 }
